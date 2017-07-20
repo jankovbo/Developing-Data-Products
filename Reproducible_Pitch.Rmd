@@ -1,0 +1,63 @@
+---
+title: "Shiny Application and Reproducible Pitch"
+author: "Bozidarka Jankovic"
+date: "July 20, 2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Shiny Presentation Introduction
+
+This presentation is  created for the course Developing Data Products, for Prroject 2- Shiny Application and Reproducible Pitch
+
+The shiny app developed for this assignment is avalilable at:https://jankovbo.shinyapps.io/Body_Mass_Index/
+
+The source codes of ui.R and server.R and also Rpresentation are available on the GitHub repo:  https://github.com/jankovbo/Developing-Data-Products
+
+
+## What is BMI
+The Body Mass Index (BMI) Calculator can be used to calculate your BMI value and weight status while taking your age into consideration.
+
+**Body Mass Index Formula**
+
+The formulas to calculate BMI based on two of the most commonly used unit systems:
+
+BMI = weight(kg)/height(m2)^2
+
+## BMI Table for Adults
+
+This is the World Health Organization's (WHO) recommended body weight based on BMI values for adults. It is used for both men and women, age 18 or older.
+
+- Severe Thinness	< 16
+- Moderate Thinness	16 - 17
+- Mild Thinness	17 - 18.5
+- Normal	18.5 - 25
+- Overweight	25 - 30
+- Obese Class I	30 - 35
+- Obese Class II	35 - 40
+- Obese Class III	> 40
+
+## BMI Table for Children and Teens, Age 2-20
+
+The Centers for Disease Control and Prevention (CDC) recommends BMI categorization for children and teens between age 2 and 20.
+
+- Underweight	<5%
+- Healthy weight	5% - 85%
+- At risk of overweight	85% - 95%
+- Overweight	>95%
+
+## Shiny App: 
+
+**Sidebar panel**
+
+- numericinput: age of user
+- numericInput: Value of Weight in KG
+- numericInput: Value of Height in M
+
+**Main panel**
+
+- Display the calculated BMI
+- Display Diagnostic
